@@ -1,18 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class AreaDelete : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private BoxCollider2D _collider;
+
+    private void Start()
     {
-        
+        _collider = GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        
+        throw new NotImplementedException();
     }
 }

@@ -13,8 +13,11 @@ public class AreaDelete : MonoBehaviour
         _collider = GetComponent<BoxCollider2D>();
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerExit2D(Collider2D col)
     {
-        throw new NotImplementedException();
+        if (!col.gameObject.CompareTag("Obstacle"))
+            return;
+        
+        Destroy(col.gameObject);
     }
 }

@@ -465,6 +465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7898557400682396837, guid: 7dfc5ec1fe33cf94c8b480d07a273bf5, type: 3}
+      propertyPath: jumpUpPower
+      value: 9.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7898557400682396839, guid: 7dfc5ec1fe33cf94c8b480d07a273bf5, type: 3}
       propertyPath: m_RootOrder
       value: 3

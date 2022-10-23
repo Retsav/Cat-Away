@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c93e343bbea38e644b97d0e32e204199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _groundObject: {fileID: 0}
 --- !u!1 &7898557400682396832
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 0}
-  jumpUpPower: 15
+  jumpUpPower: 9.5
   groundChecker: {fileID: 6291474664652859874}
 --- !u!50 &7898557400682396761
 Rigidbody2D:

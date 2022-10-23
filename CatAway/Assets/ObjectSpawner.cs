@@ -5,20 +5,27 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// ObjectSpawner jest odpowiedzialny za tworzenie przeszkód na torze gracza.
+/// </summary>
 public class ObjectSpawner : MonoBehaviour
 {
+    /// <summary>
+    /// Ta lista będzie posiadała wszystkie możliwe Prefaby które mogą być zespawnowane na tym torze
+    /// </summary>
     [SerializeField]
     private List<GameObject> prefabsToSpawn = new();
 
+    /// <summary>
+    /// Ta zmienna powie naszym Prefabom jak szybko mają się poruszać na torze.
+    /// </summary>
     [SerializeField]
     private float DesiredSpeedOverride = 1f;
 
-    private void Update()
-    {
-        SpawnRandom();
-    }
-
-    private void SpawnRandom()
+    /// <summary>
+    /// Ta funkcja wybierze losowy obiekt z listy prefabów, oraz go zespawnuje i nada mu prędkość używając Animatora
+    /// </summary>
+    public void SpawnRandom()
     {
         var randomPrefab = prefabsToSpawn.OrderBy(_ => Guid.NewGuid()).First();
         

@@ -43,4 +43,11 @@ public class Player : MonoBehaviour
             _rigidbody2D.velocity += Vector2.up * jumpUpPower;
         }
     }
+    [SerializeField]
+    private GameObject DeathParticles; 
+    public void Death()
+    {
+        Instantiate(DeathParticles,transform.position,Quaternion.identity);
+        Destroy(gameObject);
+    }
 }

@@ -175,6 +175,7 @@ MonoBehaviour:
   _rigidbody2D: {fileID: 0}
   jumpUpPower: 9.5
   groundChecker: {fileID: 6291474664652859874}
+  DeathParticles: {fileID: 9108806717003163751, guid: 39a67d9d1be0b694da1cb8bbb13138f9, type: 3}
 --- !u!50 &7898557400682396761
 Rigidbody2D:
   serializedVersion: 4
@@ -195,7 +196,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!61 &7898557400682396838
 BoxCollider2D:
   m_ObjectHideFlags: 0

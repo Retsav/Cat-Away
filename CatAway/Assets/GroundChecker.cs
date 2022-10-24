@@ -36,7 +36,7 @@ public class GroundChecker : MonoBehaviour
 
     /// <summary>
     /// Jeśli obiekt który właśnie przestał nas dotykać był naszą ziemią - zresetujmy naszą zapisaną zmienną odpowiedzialną
-    /// za ziemię.
+    /// za ziemię. 
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerExit2D(Collider2D other)

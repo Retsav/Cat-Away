@@ -27,7 +27,7 @@ public class GroundChecker : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         // Jeśli dalej posiadamy ziemię, albo obiekt którego właśnie dotknęliśmy nie jest "przeszkodą" - anulujemy działanie.
-        if (_groundObject != null || !col.gameObject.CompareTag("Obstacle"))
+        if (_groundObject != null || !col.gameObject.CompareTag("Platform"))
             return;
 
         // Jeśli nie mieliśmy już ziemi, a nowy obiekt którego dotknęliśmy jest przeszkodą, ustawmy nową ziemię.

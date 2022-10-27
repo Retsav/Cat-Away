@@ -43,4 +43,8 @@ public class Player : MonoBehaviour
             _rigidbody2D.velocity += Vector2.up * jumpUpPower;
         }
     }
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
 }

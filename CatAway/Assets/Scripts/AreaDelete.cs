@@ -18,7 +18,7 @@ public class AreaDelete : MonoBehaviour
     {
         // Czasami może się przydarzyć, że obiekt który wyjdzie z triggera nie będzie przeszkodą (np. obiekty UI/kamera)
         // Dlatego musimy się upewnić, że to co chcemy usunąć, jest przeszkodą.
-        if (!col.gameObject.CompareTag("Obstacle"))
+        if (!col.gameObject.CompareTag("Platform"))
             return; // Jeśli nie jest, po prostu zwrócmy nic i nie idziemy dalej.
         
         Destroy(col.gameObject); // Jeśli jest, usuńmy Game Object który wyszedł z Triggera.

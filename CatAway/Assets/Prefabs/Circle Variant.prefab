@@ -65,7 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734199973003168732, guid: 9336cee67268b6f4993137fdfe4567f6, type: 3}
       propertyPath: m_Name
-      value: Circle
+      value: Circle Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734199973003168732, guid: 9336cee67268b6f4993137fdfe4567f6, type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9336cee67268b6f4993137fdfe4567f6, type: 3}

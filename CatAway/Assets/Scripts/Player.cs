@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     /// </summary>
     [SerializeField]
     private float jumpUpPower = 15f;
+    [SerializeField]
+    private float GravityPower = 0.1f;
 
     /// <summary>
     /// Referencja do sub-komponenta gracza.
@@ -41,6 +43,10 @@ public class Player : MonoBehaviour
         if (groundChecker.IsTouchingGround && Input.GetButtonDown("Jump"))
         {
             _rigidbody2D.velocity += Vector2.up * jumpUpPower;
+        } 
+        if (!groundChecker.IsTouchingGround)
+        {
+            _rigidbody2D.AddForce(Vector2.down * GravityPower);
         }
     }
     public void Death()

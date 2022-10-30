@@ -22,5 +22,6 @@ public class AreaDelete : MonoBehaviour
             return; // Jeśli nie jest, po prostu zwrócmy nic i nie idziemy dalej.
         
         Destroy(col.gameObject); // Jeśli jest, usuńmy Game Object który wyszedł z Triggera.
+        Destroy(transform.parent);
     }
 }

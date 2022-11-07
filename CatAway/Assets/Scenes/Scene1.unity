@@ -1242,11 +1242,11 @@ PrefabInstance:
     - target: {fileID: 3734728201205418757, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: prefabsToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 1445237045265596239, guid: 24402fa58a4383b439a24d6c73c93b2d, type: 3}
+      objectReference: {fileID: 2106466384613361563, guid: 68a14c20a8cc39042b33dc0440f9dced, type: 3}
     - target: {fileID: 3734728201205418757, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: prefabsToSpawn.Array.data[1]
       value: 
-      objectReference: {fileID: 2563992518359066805, guid: 5feaca69b790f2547bf65d47de5405c6, type: 3}
+      objectReference: {fileID: 789529889743710016, guid: c87d8513df2afc44a8579c98baf9ef87, type: 3}
     - target: {fileID: 3734728201205418757, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: prefabsToSpawn.Array.data[2]
       value: 

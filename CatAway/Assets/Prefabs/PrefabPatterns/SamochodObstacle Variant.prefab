@@ -300,11 +300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8243530877515543907, guid: 270c25001a589a84495fca410fe6c6c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12013245
+      value: 5.404276
       objectReference: {fileID: 0}
     - target: {fileID: 8243530877515543907, guid: 270c25001a589a84495fca410fe6c6c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3755574
+      value: -2.9986954
       objectReference: {fileID: 0}
     - target: {fileID: 8243530877515543907, guid: 270c25001a589a84495fca410fe6c6c5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -375,6 +375,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1804445727324758133
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563992518359066805}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &2604281885093050388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8243530877515543907, guid: 270c25001a589a84495fca410fe6c6c5, type: 3}

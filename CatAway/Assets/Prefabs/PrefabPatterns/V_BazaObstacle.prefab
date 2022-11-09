@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8243530877515543907}
   - component: {fileID: 8668386219484836136}
-  m_Layer: 0
+  - component: {fileID: 974502005}
+  - component: {fileID: 3900206118664354882}
+  m_Layer: 6
   m_Name: V_BazaObstacle
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -52,3 +54,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &974502005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8491399279980488130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec628b8930956c48b8a1f3b8c73a46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &3900206118664354882
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8491399279980488130}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

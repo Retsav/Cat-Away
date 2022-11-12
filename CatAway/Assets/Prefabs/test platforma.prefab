@@ -14,7 +14,11 @@ GameObject:
   - component: {fileID: 4106898397910235311}
   - component: {fileID: -4925409450217674374}
   - component: {fileID: 5381431380002699136}
+<<<<<<< HEAD
   - component: {fileID: 3609002231867350787}
+=======
+  - component: {fileID: 148346515513715360}
+>>>>>>> f5c2deb1e02a6316ea5516302a64bda37fcb1458
   m_Layer: 0
   m_Name: test platforma
   m_TagString: Platform
@@ -147,14 +151,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+<<<<<<< HEAD
 --- !u!251 &3609002231867350787
 PlatformEffector2D:
+=======
+--- !u!114 &148346515513715360
+MonoBehaviour:
+>>>>>>> f5c2deb1e02a6316ea5516302a64bda37fcb1458
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4897691282948736338}
   m_Enabled: 1
+<<<<<<< HEAD
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
@@ -166,3 +176,9 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec628b8930956c48b8a1f3b8c73a46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> f5c2deb1e02a6316ea5516302a64bda37fcb1458

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - Platform
+  - Score
+  - Collectible
   layers:
   - Default
   - TransparentFX

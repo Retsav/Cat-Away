@@ -529,7 +529,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &916628724
 GameObject:
@@ -608,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3734728201205418756, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3734728201205418756, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -661,7 +661,7 @@ PrefabInstance:
     - target: {fileID: 3734728201205418757, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: prefabsToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 6351513988710507462, guid: 04829918d4d9da3429d88b08336f3702, type: 3}
+      objectReference: {fileID: 3148218379354921228, guid: 8f8a0f2ec57a71649876d3a54b82db2e, type: 3}
     - target: {fileID: 3734728201205418757, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: prefabsToSpawn.Array.data[1]
       value: 
@@ -737,7 +737,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1143899661 stripped
 MonoBehaviour:
@@ -806,7 +806,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1352512805
 PrefabInstance:
@@ -825,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3734728201205418756, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3734728201205418756, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -878,7 +878,7 @@ PrefabInstance:
     - target: {fileID: 3734728201205418757, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: prefabsToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 6351513988710507462, guid: 04829918d4d9da3429d88b08336f3702, type: 3}
+      objectReference: {fileID: 3148218379354921228, guid: 8f8a0f2ec57a71649876d3a54b82db2e, type: 3}
     - target: {fileID: 3734728201205418757, guid: 30e0131893c760544ad495c28f95edd1, type: 3}
       propertyPath: prefabsToSpawn.Array.data[1]
       value: 
@@ -1315,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7898557400682396837, guid: 7dfc5ec1fe33cf94c8b480d07a273bf5, type: 3}
       propertyPath: jumpUpPower
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7898557400682396837, guid: 7dfc5ec1fe33cf94c8b480d07a273bf5, type: 3}
       propertyPath: GravityPower
@@ -1347,7 +1347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7898557400682396839, guid: 7dfc5ec1fe33cf94c8b480d07a273bf5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -5.69
       objectReference: {fileID: 0}
     - target: {fileID: 7898557400682396839, guid: 7dfc5ec1fe33cf94c8b480d07a273bf5, type: 3}
       propertyPath: m_LocalPosition.y

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
+    //Skrypt przetrzymuje wartoœæ punktów które ³¹cznie gracz zebra³.
     [SerializeField] public int Points = 0;
     void Start()
     {

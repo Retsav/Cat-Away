@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectibleScript : MonoBehaviour
 {
     [SerializeField] private Score Score;
-    [SerializeField] private int pointsToAdd = 10;
+    [SerializeField] private float pointsToAdd = 10f;
     private bool isCollected = false;
 
     private void Start()

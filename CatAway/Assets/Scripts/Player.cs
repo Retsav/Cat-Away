@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     /// </summary>
     [SerializeField]
     private Rigidbody2D _rigidbody2D;
+    public bool isDead;
 
     /// <summary>
     /// Jak wysoko nasz gracz może skoczyć
@@ -52,5 +53,6 @@ public class Player : MonoBehaviour
     public void Death()
     {
         Destroy(gameObject);
+        isDead = true;
     }
 }

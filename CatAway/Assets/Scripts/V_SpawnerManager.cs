@@ -11,6 +11,7 @@ public class V_SpawnerManager : MonoBehaviour
     [SerializeField]
     private float SpawnEvery = 2f;
 
+
     private void DoRandomSpawner()
     {
         var random = objectSpawners.OrderBy(_ => Guid.NewGuid()).First();

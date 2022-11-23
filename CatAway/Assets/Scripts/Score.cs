@@ -9,6 +9,8 @@ public class Score : MonoBehaviour
     [SerializeField] private float IncreasePerTime = 1f;
     [SerializeField] private Player player;
     [SerializeField] private float SpeedFactor = 2f;
+
+
     void Start()
     {
 

@@ -11,11 +11,13 @@ using UnityEngine.UIElements;
 /// <para>Użyte w <see cref="Player"/></para>
 /// </summary>
 [RequireComponent(typeof(BoxCollider2D))]
+
 public class GroundChecker : MonoBehaviour
 {
     // SerializeField jest tutaj tylko by okazać ten obiekt w oknie inspektora w edytorze dla debugowania.
     [SerializeField]
     private GameObject _groundObject;
+    
 
     // Field który ma tylko gettera, sprawdza czy _groundObject istnieje. Jest to jedyny publiczny field w tej klasie.
     public bool IsTouchingGround => _groundObject != null;
@@ -29,9 +31,10 @@ public class GroundChecker : MonoBehaviour
         // Jeśli dalej posiadamy ziemię, albo obiekt którego właśnie dotknęliśmy nie jest "przeszkodą" - anulujemy działanie.
         if (_groundObject != null || !col.gameObject.CompareTag("Platform"))
             return;
-
+           
         // Jeśli nie mieliśmy już ziemi, a nowy obiekt którego dotknęliśmy jest przeszkodą, ustawmy nową ziemię.
         _groundObject = col.gameObject;
+        
     }
 
     /// <summary>
@@ -45,5 +48,6 @@ public class GroundChecker : MonoBehaviour
             return;
 
         _groundObject = null;
+        
     }
 }

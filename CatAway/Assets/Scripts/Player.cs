@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Rigidbody2D _rigidbody2D;
     public bool isDead;
+    private PlayerAnimation _playerAnim;
 
     /// <summary>
     /// Jak wysoko nasz gracz może skoczyć
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     private float jumpUpPower = 15f;
     [SerializeField]
     private float GravityPower = 0.1f;
+   
+   
 
     /// <summary>
     /// Referencja do sub-komponenta gracza.
@@ -32,23 +35,31 @@ public class Player : MonoBehaviour
     /// </summary>
     [SerializeField]
     private GroundChecker groundChecker;
+    
+    
     private void Start()
     {
         // Złapmy referencję do RigidBody podczas spawnu.
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _playerAnim =GetComponent<PlayerAnimation>();
     }
 
-    void Update()
+    private void Update()
     {
         // Jeśli dotykamy ziemi, i właśnie kliknęliśmy spację - skoczmy!
         if (groundChecker.IsTouchingGround && Input.GetButtonDown("Jump"))
         {
+            _playerAnim.Jump(true);
             _rigidbody2D.velocity += Vector2.up * jumpUpPower;
         } 
         if (!groundChecker.IsTouchingGround)
         {
-            _rigidbody2D.AddForce(Vector2.down * GravityPower);
+           _rigidbody2D.AddForce(Vector2.down * GravityPower);
+           _playerAnim.Jump(false);
+           _playerAnim.Run(true);
         }
+        
+        
     }
     public void Death()
     {

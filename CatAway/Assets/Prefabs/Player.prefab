@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 7898557400682396839}
   - component: {fileID: 7898557400682396836}
   - component: {fileID: 7898557400682396837}
+  - component: {fileID: 7919098025897661470}
   - component: {fileID: 7898557400682396761}
   - component: {fileID: 7898557400682396838}
   m_Layer: 0
@@ -173,8 +174,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 0}
+  isDead: 0
   jumpUpPower: 9.5
+  GravityPower: 0.1
   groundChecker: {fileID: 6291474664652859874}
+--- !u!114 &7919098025897661470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7898557400682396832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c0f43ab03379a47b535d1f46d7c136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &7898557400682396761
 Rigidbody2D:
   serializedVersion: 4

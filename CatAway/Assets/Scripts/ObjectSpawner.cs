@@ -40,7 +40,7 @@ public class ObjectSpawner : MonoBehaviour
         if (Score.Points >= 10 && Score.Points <= 12)
         {
             Debug.Log("Dzialam");
-            DesiredSpeedOverride += 0.1f * Time.deltaTime;
+            DesiredSpeedOverride += 0.5f * Time.deltaTime;
         }
     }
     public void SpawnRandom()

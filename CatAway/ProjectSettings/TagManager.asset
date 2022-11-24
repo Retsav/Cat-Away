@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Score
   - Collectible
+  - Spawner
   layers:
   - Default
   - TransparentFX

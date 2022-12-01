@@ -56,6 +56,6 @@ public class ObjectSpawner : MonoBehaviour
     }
     private void Update()
     {
-        Add();
+       // Add();
     }
 }

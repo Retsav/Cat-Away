@@ -3,23 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-/// <summary>
 /// Komponent odpowiedzialny za logikę gracza.
-/// </summary>
 public class Player : MonoBehaviour
 {
-    /// <summary>
     /// Musimy mieć referencję do rigid body obecnego GameObjecta by nim poruszać.
     /// Poruszamy rigidbodym a nie transformem by nasze ruchy były zgodne z silnikiem fizyki.
-    /// </summary>
     [SerializeField]
     private Rigidbody2D _rigidbody2D;
     public bool isDead;
     private PlayerAnimation _playerAnim;
 
-    /// <summary>
     /// Jak wysoko nasz gracz może skoczyć
-    /// </summary>
     [SerializeField]
     private float jumpUpPower = 15f;
     [SerializeField]
@@ -27,17 +21,15 @@ public class Player : MonoBehaviour
    
    
 
-    /// <summary>
     /// Referencja do sub-komponenta gracza.
     /// Sub-komponent znaduje się w osobnym GameObjectie który ma gracza jako parent.
     ///
     /// Ground Checker ma za zadanie określenia czy gracz obecnie dotyka ziemi, czy nie.
-    /// </summary>
     [SerializeField]
     private GroundChecker groundChecker;
     
     
-    private void Start()
+    private void Awake()
     {
         // Złapmy referencję do RigidBody podczas spawnu.
         _rigidbody2D = GetComponent<Rigidbody2D>();

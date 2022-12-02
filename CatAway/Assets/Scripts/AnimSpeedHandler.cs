@@ -11,6 +11,7 @@ public class AnimSpeedHandler : MonoBehaviour
     private Player player;
     [SerializeField] 
     private ObjectSpawner spawner;
+    //
     void Start()
     {
         anim = GetComponent<Animator>();

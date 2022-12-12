@@ -9,6 +9,7 @@ TagManager:
   - Score
   - Collectible
   - Spawner
+  - Building
   layers:
   - Default
   - TransparentFX

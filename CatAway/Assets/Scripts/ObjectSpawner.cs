@@ -27,6 +27,7 @@ public class ObjectSpawner : MonoBehaviour
     /// </summary>
     [SerializeField]
     private Score Score;
+    private BuildingChecker checker;
     private bool toAdd = false;
 
     private void Start()

@@ -6,7 +6,7 @@ using UnityEngine;
 public class BuildingChecker : MonoBehaviour
 {
 
-    public bool inaway = true;
+    //public bool inaway = true;
     [SerializeField] private V_SpawnerManager manager;
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,11 @@ public class BuildingChecker : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Building")) {
+        /* if(collision.gameObject.CompareTag("Building")) {
             inaway = false;
         }
         inaway = true;
+        */
+        manager.DoRandomSpawner();
     }
 }

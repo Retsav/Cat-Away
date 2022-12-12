@@ -15,28 +15,28 @@ public class V_SpawnerManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(buildingchecker.inaway);
+ /*       Debug.Log(buildingchecker.inaway);
         if(buildingchecker.inaway == false)
         {
              Debug.Log("spawnable True");
              spawnable = true;
         }
-
+ */
     }
 
     public void DoRandomSpawner()
     {
-        if (spawnable) {
+        //if (spawnable) {
             Debug.Log("SPAWNUJE SIE ZYJE");
             var random = objectSpawners.OrderBy(_ => Guid.NewGuid()).First();
             random.SpawnRandom();
             spawnable = false;
-        }
+        //}
         return; 
     }
     void Start()
     {
-        InvokeRepeating("DoRandomSpawner", 0f,SpawnEvery);
+        //InvokeRepeating("DoRandomSpawner", 0f,SpawnEvery);
 
     }
 }

@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
         
         
     }
+
     public void Death()
     {
         Destroy(gameObject);

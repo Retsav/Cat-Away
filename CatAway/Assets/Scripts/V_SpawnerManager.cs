@@ -22,7 +22,6 @@ public class V_SpawnerManager : MonoBehaviour
             Debug.Log("SPAWNUJE SIE ZYJE");
             var random = objectSpawners.OrderBy(_ => Guid.NewGuid()).First();
             random.SpawnRandom();
-            spawnable = false;
         //}
         return; 
     }

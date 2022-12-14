@@ -8,20 +8,12 @@ public class V_SpawnerManager : MonoBehaviour
 {
     [SerializeField]
     private List<ObjectSpawner> objectSpawners;
-    [SerializeField]
-    private float SpawnEvery = 2f;
+    //[SerializeField]
+    //private float SpawnEvery = 2f;
     [SerializeField] private BuildingChecker buildingchecker;
-    private bool spawnable;
 
     private void Update()
     {
- /*       Debug.Log(buildingchecker.inaway);
-        if(buildingchecker.inaway == false)
-        {
-             Debug.Log("spawnable True");
-             spawnable = true;
-        }
- */
     }
 
     public void DoRandomSpawner()

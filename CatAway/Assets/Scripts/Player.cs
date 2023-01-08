@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 /// Komponent odpowiedzialny za logikę gracza.
@@ -18,8 +19,8 @@ public class Player : MonoBehaviour
     private float jumpUpPower = 15f;
     [SerializeField]
     private float GravityPower = 0.1f;
-   
-   
+    
+
 
     /// Referencja do sub-komponenta gracza.
     /// Sub-komponent znaduje się w osobnym GameObjectie który ma gracza jako parent.
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GroundChecker groundChecker;
     
+   
     
     private void Awake()
     {
@@ -56,7 +58,7 @@ public class Player : MonoBehaviour
 
     public void Death()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         isDead = true;
     }
 }

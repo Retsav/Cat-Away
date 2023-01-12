@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 3708869428040580684}
   m_Layer: 0
   m_Name: IMG_3250
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,11 +228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8243530877515543907, guid: 270c25001a589a84495fca410fe6c6c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5765393
+      value: 6.5876403
       objectReference: {fileID: 0}
     - target: {fileID: 8243530877515543907, guid: 270c25001a589a84495fca410fe6c6c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9081578
+      value: -20.025492
       objectReference: {fileID: 0}
     - target: {fileID: 8243530877515543907, guid: 270c25001a589a84495fca410fe6c6c5, type: 3}
       propertyPath: m_LocalPosition.z

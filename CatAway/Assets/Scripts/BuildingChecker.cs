@@ -8,7 +8,7 @@ public class BuildingChecker : MonoBehaviour
     [SerializeField] private V_SpawnerManager manager;
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //To jest obrzydliwie napisane, ale nie mam ju¿ si³y.
+        //To jest obrzydliwie napisane, ale nie mam ju¿ si³y. To do: Zamieniæ na switch
         if (collision.gameObject.CompareTag("Platform"))
         {
             return;

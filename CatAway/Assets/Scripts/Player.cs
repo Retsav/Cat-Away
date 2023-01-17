@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     public bool isDead;
     private PlayerAnimation _playerAnim;
+    
 
     /// Jak wysoko nasz gracz może skoczyć
     [SerializeField]
@@ -57,8 +58,8 @@ public class Player : MonoBehaviour
     }
 
     public void Death()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    {  
+        SceneManager.LoadScene(3);
         isDead = true;
     }
 }

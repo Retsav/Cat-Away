@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 407111370}
   - component: {fileID: 407111372}
   - component: {fileID: 407111371}
+  - component: {fileID: 407111373}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -459,8 +460,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35, y: 64}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 38.0451, y: 58.9247}
+  m_SizeDelta: {x: 206.0902, y: 39.8495}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407111371
 MonoBehaviour:
@@ -545,7 +546,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -789.35114, y: 0, z: -679.62085, w: 0}
+  m_margin: {x: -789.35114, y: 0, z: -712.10254, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -559,6 +560,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407111369}
   m_CullTransparentMesh: 1
+--- !u!95 &407111373
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407111369}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e8cadeeff07487543aabf3453ea0637a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &408789717
 GameObject:
   m_ObjectHideFlags: 0

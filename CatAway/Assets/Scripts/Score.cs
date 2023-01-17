@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    //Skrypt przetrzymuje wartoœæ punktów które ³¹cznie gracz zebra³.
+    //Skrypt przetrzymuje wartoï¿½ï¿½ punktï¿½w ktï¿½re ï¿½ï¿½cznie gracz zebraï¿½.
     [SerializeField] public float Points = 0f;
-    //Zmienna odpowiadaj¹ca za iloœæ punktów dodawanych
+    //Zmienna odpowiadajï¿½ca za iloï¿½ï¿½ punktï¿½w dodawanych
     [SerializeField] private float IncreasePerTime = 1f;
-    //Powi¹zanie z playerem
+    //Powiï¿½zanie z playerem
     [SerializeField] private Player player;
-    //Mno¿nik szybkoœci zbierania punktów (nadaje efekt nabijania punktów jak np. w Subway Sufers)
+    //Mnoï¿½nik szybkoï¿½ci zbierania punktï¿½w (nadaje efekt nabijania punktï¿½w jak np. w Subway Sufers)
     [SerializeField] private float SpeedFactor = 2f;
 
 
@@ -22,10 +22,13 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(!player.isDead == false)
-        {
-            return;
-        }
-       Points += IncreasePerTime * Time.deltaTime * SpeedFactor;
+        if(!player.isDead == false)
+            {
+                return;
+            }
+        Points += IncreasePerTime * Time.deltaTime * SpeedFactor;
+        
+       
+       
     }
 }

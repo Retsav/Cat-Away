@@ -8,13 +8,6 @@ public class SpeedManager : MonoBehaviour
     [SerializeField] private ObjectSpawner objectSpawner;
     [SerializeField] private AnimationCurve speedCurve;
     [SerializeField] private int maxPoints;
-  
-
-    void Start()
-    {
-        
-        
-    }
 
     void Update()
     {

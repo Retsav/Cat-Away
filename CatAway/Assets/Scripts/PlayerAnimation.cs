@@ -20,9 +20,4 @@ public class PlayerAnimation : MonoBehaviour
     {
         _anim.SetBool("Jumping", jumping);
     }
-
-    void Update()
-    {
-
-    }
 }

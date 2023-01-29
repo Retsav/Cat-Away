@@ -13,13 +13,6 @@ public class Score : MonoBehaviour
     //Mno�nik szybko�ci zbierania punkt�w (nadaje efekt nabijania punkt�w jak np. w Subway Sufers)
     [SerializeField] private float SpeedFactor = 2f;
 
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(!player.isDead == false)

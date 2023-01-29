@@ -8,27 +8,19 @@ public class V_SpawnerManager : MonoBehaviour
 {
     [SerializeField]
     private List<ObjectSpawner> objectSpawners;
-    //[SerializeField]
-    //private float SpawnEvery = 2f;
     [SerializeField] private BuildingChecker buildingchecker;
-
-    private void Update()
-    {
-    }
 
     public void DoRandomSpawner()
     {
-        //if (spawnable) {
-            Debug.Log("SPAWNUJE SIE ZYJE");
-            var random = objectSpawners.OrderBy(_ => Guid.NewGuid()).First();
-            random.SpawnRandom();
-        //}
-        return; 
+        var random = objectSpawners.OrderBy(_ => Guid.NewGuid()).First();
+        Invoke("CreateObstacle",0.05f);
+        return;
     }
-    void Start()
-    {
-        //InvokeRepeating("DoRandomSpawner", 0f,SpawnEvery);
 
+    public void CreateObstacle()
+    {
+        var random = objectSpawners.OrderBy(_ => Guid.NewGuid()).First();
+        random.SpawnRandom();
     }
 }
 

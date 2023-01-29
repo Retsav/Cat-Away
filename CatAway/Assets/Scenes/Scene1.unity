@@ -2328,6 +2328,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b42c31c55268d4aa5f9ff15f0b9bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1986309432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986309421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d60f0ee7d801f4bb1a0f050281ee50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1145293187}
+  objectSpawner: {fileID: 1143899661}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0015522242
+      value: 0.20406057
+      inSlope: 0.97756815
+      outSlope: 0.97756815
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8073425
+      value: 0.9917755
+      inSlope: 0.97756815
+      outSlope: 0.97756815
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxPoints: 1000
 --- !u!1 &2020246943
 GameObject:
   m_ObjectHideFlags: 0

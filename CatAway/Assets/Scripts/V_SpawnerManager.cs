@@ -8,11 +8,10 @@ public class V_SpawnerManager : MonoBehaviour
 {
     [SerializeField]
     private List<ObjectSpawner> objectSpawners;
-    [SerializeField] private BuildingChecker buildingchecker;
+    [SerializeField] private BuildingChecker buildingChecker;
 
     public void DoRandomSpawner()
     {
-        var random = objectSpawners.OrderBy(_ => Guid.NewGuid()).First();
         Invoke("CreateObstacle",0.05f);
         return;
     }

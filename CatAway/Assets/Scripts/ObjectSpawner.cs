@@ -20,30 +20,16 @@ public class ObjectSpawner : MonoBehaviour
     /// Ta zmienna powie naszym Prefabom jak szybko mają się poruszać na torze.
     /// </summary>
     [SerializeField]
-    public float DesiredSpeedOverride = 1f;
+    public float desiredSpeedOverride = 1f;
 
-    /// <summary>
+
+
+    private void Awake()
+    {
+        Score score = GameObject.FindGameObjectWithTag("Score").GetComponent<Score>();
+    }
+
     /// Ta funkcja wybierze losowy obiekt z listy prefabów, oraz go zespawnuje i nada mu prędkość używając Animatora
-    /// </summary>
-    [SerializeField]
-    private Score Score;
-    private BuildingChecker checker;
-    private bool toAdd = false;
-
-    private void Start()
-    {
-        Score = GameObject.FindGameObjectWithTag("Score").GetComponent<Score>();
-    }
-
-    public void Add()
-    {
-
-        if (Score.Points >= 10 && Score.Points <= 12)
-        {
-            Debug.Log("Dzialam");
-            DesiredSpeedOverride += 0.5f * Time.deltaTime;
-        }
-    }
     public void SpawnRandom()
     {
         var randomPrefab = prefabsToSpawn.OrderBy(_ => Guid.NewGuid()).First();
@@ -52,11 +38,7 @@ public class ObjectSpawner : MonoBehaviour
 
         if (instance.TryGetComponent<Animator>(out var animator))
         {
-            animator.SetFloat("AnimSpeed", DesiredSpeedOverride);
+            animator.SetFloat("AnimSpeed", desiredSpeedOverride);
         }
-    }
-    private void Update()
-    {
-       // Add();
     }
 }

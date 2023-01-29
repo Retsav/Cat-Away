@@ -27,6 +27,6 @@ public class AnimSpeedHandler : MonoBehaviour
         {
             return;
         }
-        anim.SetFloat("AnimSpeed", spawner.DesiredSpeedOverride);
+        anim.SetFloat("AnimSpeed", spawner.desiredSpeedOverride);
     }
 }

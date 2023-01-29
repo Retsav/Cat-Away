@@ -13,7 +13,6 @@ public class SpeedManager : MonoBehaviour
     {
         var point = score.Points / maxPoints; 
         var speedIntersection = speedCurve.Evaluate(point);
-        objectSpawner.DesiredSpeedOverride = speedIntersection;
-        Debug.Log(point);
+        objectSpawner.desiredSpeedOverride = speedIntersection;
     }
 }

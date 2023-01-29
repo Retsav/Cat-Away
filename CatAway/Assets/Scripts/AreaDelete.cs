@@ -18,7 +18,6 @@ public class AreaDelete : MonoBehaviour
     {
         // Czasami może się przydarzyć, że obiekt który wyjdzie z triggera nie będzie przeszkodą (np. obiekty UI/kamera)
         // Dlatego musimy się upewnić, że to co chcemy usunąć, jest przeszkodą.
-        Debug.Log("Pomidor");
         var deletableComponent = col.gameObject.GetComponentInParent<DeletableObstacle>();
         if (deletableComponent == null)
             return; // Jeśli nie jest, po prostu zwrócmy nic i nie idziemy dalej.

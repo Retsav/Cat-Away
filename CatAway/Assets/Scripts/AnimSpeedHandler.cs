@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class AnimSpeedHandler : MonoBehaviour
 {
-    private Score score;
-    private Animator anim;
-    [SerializeField]
-    private Animator catanim;
+    private Animator anim;  
     private Player player;
     [SerializeField] 
     private ObjectSpawner spawner;
-    //
-    void Start()
+  
+    void Awake()
     {
         anim = GetComponent<Animator>();
-        catanim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        score = GameObject.FindGameObjectWithTag("Score").GetComponent<Score>();
         spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<ObjectSpawner>();
     }
 

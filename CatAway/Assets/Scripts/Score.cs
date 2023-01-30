@@ -15,13 +15,16 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        if(!player.isDead == false)
-            {
-                return;
-            }
+        PointIncrease();
+
+    }
+
+    private void PointIncrease()
+    {
+        if (!player.isDead == false)
+        {
+            return;
+        }
         Points += IncreasePerTime * Time.deltaTime * SpeedFactor;
-        
-       
-       
     }
 }

@@ -16,13 +16,19 @@ public class CollectibleScript : MonoBehaviour
     void Update()
     {
         //Je¿eli isCollected jest w³¹czone, dodaj pointsToAdd do skryptu Points w skrypcie "Score", a nastêpnie zniszcz GameObject.
-        if(isCollected)
+        CollectibleChecker();
+    }
+
+    private void CollectibleChecker()
+    {
+        if (isCollected)
         {
             Score.Points += pointsToAdd;
             Debug.Log("Zebrano mnie");
             Destroy(gameObject);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //OnTriggerEnter2D sprawdza czy obiekt jest Playerem, je¿eli nie to return, w przeciwnym razie prze³¹cz isCollected na true.  

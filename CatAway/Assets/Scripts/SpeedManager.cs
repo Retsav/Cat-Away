@@ -11,7 +11,12 @@ public class SpeedManager : MonoBehaviour
 
     void Update()
     {
-        var point = score.Points / maxPoints; 
+        SpeedIncreaseHandler();
+    }
+
+    private void SpeedIncreaseHandler()
+    {
+        var point = score.Points / maxPoints;
         var speedIntersection = speedCurve.Evaluate(point);
         objectSpawner.desiredSpeedOverride = speedIntersection;
     }

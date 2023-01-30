@@ -41,20 +41,24 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        JumpBehaviour();
+    }
+
+    private void JumpBehaviour()
+    {
         // Jeśli dotykamy ziemi, i właśnie kliknęliśmy spację - skoczmy!
         if (groundChecker.IsTouchingGround && Input.GetButtonDown("Jump"))
         {
             _playerAnim.Jump(true);
             _rigidbody2D.velocity += Vector2.up * jumpUpPower;
-        } 
+        }
         if (!groundChecker.IsTouchingGround)
         {
-           _rigidbody2D.AddForce(Vector2.down * GravityPower);
-           _playerAnim.Jump(false);
-           _playerAnim.Run(true);
+            _rigidbody2D.AddForce(Vector2.down * GravityPower);
+            _playerAnim.Jump(false);
+            _playerAnim.Run(true);
         }
-        
-        
+
     }
 
     public void Death()

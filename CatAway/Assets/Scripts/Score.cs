@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
@@ -12,11 +14,16 @@ public class Score : MonoBehaviour
     [SerializeField] private Player player;
     //Mno�nik szybko�ci zbierania punkt�w (nadaje efekt nabijania punkt�w jak np. w Subway Sufers)
     [SerializeField] private float SpeedFactor = 2f;
+    
+ 
+    
+    
 
     void Update()
     {
         PointIncrease();
-
+        PlayerPrefs.SetFloat("Points", Points);
+        
     }
 
     private void PointIncrease()
@@ -27,4 +34,5 @@ public class Score : MonoBehaviour
         }
         Points += IncreasePerTime * Time.deltaTime * SpeedFactor;
     }
+    
 }

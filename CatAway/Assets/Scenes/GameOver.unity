@@ -822,7 +822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -189}
+  m_AnchoredPosition: {x: 40, y: -183}
   m_SizeDelta: {x: 351.144, y: 58.2757}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &771489978
@@ -868,7 +868,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 771489979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1681588932}
+        m_TargetAssemblyTypeName: Control, Assembly-CSharp
+        m_MethodName: RestartTheGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &771489979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,6 +1357,7 @@ GameObject:
   - component: {fileID: 1681588931}
   - component: {fileID: 1681588930}
   - component: {fileID: 1681588929}
+  - component: {fileID: 1681588932}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1418,6 +1431,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681588932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681588928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8e6f5f5fb6f0c4db1fb66654c4e4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1798052853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,11 +1556,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798052853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 497327a9119ebfa45b23b01f18fc76a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8abf5105ed55b96499edecb95c63191b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: {fileID: 0}
-  Score: {fileID: 0}
+  ScoreText: {fileID: 1899320122}
+  HighscoreText: {fileID: 0}
 --- !u!1 &1808036678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,8 +1796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -529, y: -67}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -547.6098, y: -58.858215}
+  m_SizeDelta: {x: 162.7804, y: 33.7164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1899320122
 MonoBehaviour:

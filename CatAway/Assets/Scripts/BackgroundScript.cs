@@ -12,6 +12,7 @@ public class BackgroundScript : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector2.left*speed*Time.deltaTime);
+        speed+= 0.05f*Time.deltaTime;
 
         if(transform.position.x <=endX)
         {
